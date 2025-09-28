@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinogo - Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">Kinogo</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="center-text">
+            <h1>Welcome to Kinogo!</h1>
+            <p>Discover the best movies of 2025.</p>
+        </section>
+
+        <section id="movies" class="movie-layout">
+            <div class="movie-layout-item">
+                <h2>Movies by Genre</h2>
+                <div class="movie-buttons">
+                    <button onclick="showGenreMovies('Sci-Fi')">Sci-Fi</button>
+                    <button onclick="showGenreMovies('Action')">Action</button>
+                    <button onclick="showGenreMovies('Drama')">Drama</button>
+                    <button onclick="showGenreMovies('Comedy')">Comedy</button>
+                    <button onclick="showGenreMovies('Thriller')">Thriller</button>
+                    <button onclick="showGenreMovies('Romance')">Romance</button>
+                    <button onclick="showGenreMovies('Horror')">Horror</button>
+                    <button onclick="showGenreMovies('Animation')">Animation</button>
+                    <button onclick="showGenreMovies('Adventure')">Adventure</button>
+                    <button onclick="showGenreMovies('Fantasy')">Fantasy</button>
+                    <button onclick="showGenreMovies('Mystery')">Mystery</button>
+                    <button onclick="showGenreMovies('Documentary')">Documentary</button>
+                </div>
+
+                <div id="Sci-Fi" class="movie-list" style="display:none;">
+                    <div class="movie-card">
+                        <img src="1+1.webp" alt="1+1">
+                        <h3>1+1</h3>
+                        <p>2025 - A futuristic adventure.</p>
+                    </div>
+                    <div class="movie-card">
+                        <img src="достучаться до небес.webp" alt="Достучаться до небес">
+                        <h3>Достучаться до небес</h3>
+                        <p>2025 - A sci-fi thriller.</p>
+                    </div>
+                </div>
+
+                <div id="Action" class="movie-list" style="display:none;">
+                    <div class="movie-card">
+                        <img src="action_movie1.jpg" alt="Action Movie 1">
+                        <h3>Action Movie 1</h3>
+                        <p>2025 - Explosive action in every scene.</p>
+                    </div>
+                    <div class="movie-card">
+                        <img src="action_movie2.jpg" alt="Action Movie 2">
+                        <h3>Action Movie 2</h3>
+                        <p>2025 - High stakes, high adrenaline.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-layout-item">
+                <h2>Movies by Year</h2>
+                <div class="movie-buttons">
+                    <button onclick="showYearMovies('2025')">2025</button>
+                    <button onclick="showYearMovies('2024')">2024</button>
+                    <button onclick="showYearMovies('2023')">2023</button>
+                    <button onclick="showYearMovies('2022')">2022</button>
+                    <button onclick="showYearMovies('2021')">2021</button>
+                    <button onclick="showYearMovies('2020')">2020</button>
+                    <button onclick="showYearMovies('2019')">2019</button>
+                    <button onclick="showYearMovies('2018')">2018</button>
+                    <button onclick="showYearMovies('2017')">2017</button>
+                    <button onclick="showYearMovies('2016')">2016</button>
+                    <button onclick="showYearMovies('2015')">2015</button>
+                    <button onclick="showYearMovies('2014')">2014</button>
+                </div>
+
+                <div id="2025" class="movie-list" style="display:none;">
+                    <div class="movie-card">
+                        <img src="2025_movie1.jpg" alt="2025 Movie 1">
+                        <h3>2025 Movie 1</h3>
+                        <p>A drama about love and loss.</p>
+                    </div>
+                    <div class="movie-card">
+                        <img src="2025_movie2.jpg" alt="2025 Movie 2">
+                        <h3>2025 Movie 2</h3>
+                        <p>A thrilling mystery about truth and justice.</p>
+                    </div>
+                </div>
+
+                <div id="2024" class="movie-list" style="display:none;">
+                    <div class="movie-card">
+                        <img src="2024_movie1.jpg" alt="2024 Movie 1">
+                        <h3>2024 Movie 1</h3>
+                        <p>An emotional journey of resilience.</p>
+                    </div>
+                    <div class="movie-card">
+                        <img src="2024_movie2.jpg" alt="2024 Movie 2">
+                        <h3>2024 Movie 2</h3>
+                        <p>A gripping psychological thriller.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="1+1.webp" alt="1+1">
+                    <div class="overlay">1+1</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="достучаться до небес.webp" alt="Достучаться до небес">
+                    <div class="overlay">Достучаться до небес</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Зеленая книга.webp" alt="Зеленая книга">
+                    <div class="overlay">Зеленая книга</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Зеленая миля.webp" alt="Зеленая миля">
+                    <div class="overlay">Зеленая миля</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Интерстеллар.webp" alt="Интерстеллар">
+                    <div class="overlay">Интерстеллар</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="начало.webp" alt="Начало">
+                    <div class="overlay">Начало</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Остров проклятых.webp" alt="Остров проклятых">
+                    <div class="overlay">Остров проклятых</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="побег из шоушенка.webp" alt="Побег из шоушенка">
+                    <div class="overlay">Побег из шоушенка</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="пятый элемент.webp" alt="Пятый элемент">
+                    <div class="overlay">Пятый элемент</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Kinogo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showGenreMovies(genre) {
+            const allGenreMovies = document.querySelectorAll('.movie-list');
+            allGenreMovies.forEach(movieList => {
+                movieList.style.display = 'none';
+            });
+
+            const genreMovies = document.getElementById(genre);
+            genreMovies.style.display = 'block';
+        }
+
+        function showYearMovies(year) {
+            const allYearMovies = document.querySelectorAll('.movie-list');
+            allYearMovies.forEach(movieList => {
+                movieList.style.display = 'none';
+            });
+
+            const yearMovies = document.getElementById(year);
+            yearMovies.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
