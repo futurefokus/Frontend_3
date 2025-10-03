@@ -111,27 +111,5 @@
     <footer class="footer">
         <p>&copy; 2025 Kinogo. All rights reserved.</p>
     </footer>
-
-    <script>
-        function showGenreMovies(genre) {
-            const allGenreMovies = document.querySelectorAll('.movie-list');
-            allGenreMovies.forEach(movieList => {
-                movieList.style.display = 'none';
-            });
-
-            const genreMovies = document.getElementById(genre);
-            genreMovies.style.display = 'block';
-        }
-
-        function showYearMovies(year) {
-            const allYearMovies = document.querySelectorAll('.movie-list');
-            allYearMovies.forEach(movieList => {
-                movieList.style.display = 'none';
-            });
-
-            const yearMovies = document.getElementById(year);
-            yearMovies.style.display = 'block';
-        }
-    </script>
 </body>
 </html>
